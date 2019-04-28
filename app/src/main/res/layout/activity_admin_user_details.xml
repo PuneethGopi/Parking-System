@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorBlue">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/app_name"/>
+        <ImageButton
+            android:id="@+id/aaud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_logout"
+            android:onClick="aaudlo"
+            android:layout_gravity="right"/>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/search_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="10sp"
+        android:padding="8dp"
+        android:text="User Details"
+        android:textAlignment="center"
+        android:textColor="@color/colorNavyBlue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/pmParkingSpotDetailsText0"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/pmParkingSpotDetailsFName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="TextView" />
+
+
+    <TextView
+        android:id="@+id/pmParkingSpotDetailsLName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"/>
+
+    <Button
+        android:id="@+id/edit_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlue"
+        android:onClick="edit_user"/>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="fill"
+                app:tabMode="fixed" />
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

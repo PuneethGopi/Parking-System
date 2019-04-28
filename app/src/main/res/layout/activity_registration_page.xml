@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorBlue">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/app_name"/>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/registrationPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="10sp"
+        android:padding="8dp"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="@color/colorNavyBlue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+        <TextView
+            android:id="@+id/registrationPageText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="Username:" />
+
+        <EditText
+            android:id="@+id/rsUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:hint="username" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        <TextView
+            android:id="@+id/registrationPageText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="Password:" />
+
+        <EditText
+            android:id="@+id/rsPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:hint="password" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        <TextView
+            android:id="@+id/registrationPageText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="Last Name:" />
+
+        <EditText
+            android:id="@+id/rsLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:hint="lastname" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        <TextView
+            android:id="@+id/registrationPageText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="First Name:" />
+
+        <EditText
+            android:id="@+id/rsFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:hint="firstname" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        <TextView
+            android:id="@+id/registrationPageText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="Role" />
+
+        <Spinner
+            android:id="@+id/rsUserRoleSpinner"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:entries="@array/UserRoleRegistrationScreen"
+            android:inputType="textPersonName"
+            android:visibility="visible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        <TextView
+            android:id="@+id/registrationPageText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="UTA ID:" />
+
+        <EditText
+            android:id="@+id/rsUTAID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:hint="UTA_ID" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        <TextView
+            android:id="@+id/rsSystemUserPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="Phone :" />
+        <EditText
+            android:id="@+id/rsSystemUserPhoneGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:hint="phone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        <TextView
+            android:id="@+id/registrationPageText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="Email :" />
+
+        <EditText
+            android:id="@+id/rsSystemUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:hint="email" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        <TextView
+            android:id="@+id/registrationPageText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="Street :" />
+
+        <EditText
+            android:id="@+id/rsSystemUserStreet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:hint="street address" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        <TextView
+            android:id="@+id/registrationPageText9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="City :" />
+
+        <EditText
+            android:id="@+id/rsSystemUserCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:hint="city" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/rsUserState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="State :"/>
+        <EditText
+            android:id="@+id/rsUserStateGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:hint="state"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/rsUserZip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="ZIP :"/>
+        <EditText
+            android:id="@+id/rsUserZipGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:hint="zip" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        <TextView
+            android:id="@+id/registrationPageText10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="Licence Plate :" />
+        <EditText
+            android:id="@+id/rsLicencePlate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:hint="licence plate" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+        <TextView
+            android:id="@+id/rsParkingPermit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:lineSpacingExtra="10sp"
+            android:textColor="@color/colorNavyBlue"
+            android:textSize="14sp"
+            android:text="Permit Type :" />
+        <EditText
+            android:id="@+id/rsParkingPermitGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:ems="10"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:hint="parking permit type"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/rsRegisterButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:onClick="onRegistrationButtonClick"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:text="REGISTER" />
+
+</LinearLayout>
+</ScrollView>
